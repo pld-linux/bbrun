@@ -1,15 +1,15 @@
 Summary:	A simple run window with dropdown history list
 Summary(pl):	Proste okienko uruchamiania z rozwijan± list± historii
 Name:		bbrun
-Version:	1.4
+Version:	1.6
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	http://www.dwave.net/~jking/bbrun/%{name}-%{version}.tar.gz
+Source0:	http://www.darkops.net/bbrun/%{name}-%{version}.tar.gz
 # Source0-md5:	d31cecada7d39b894bdf6012c6bae98a
-URL:		http://www.dwave.net/~jking/bbrun/
+URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,7 +29,7 @@ poleceñ.
 %build
 %{__make} -C bbrun \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} `gtk-config --cflags`"
+	CFLAGS="%{rpmcflags} `pkg-config --cflags gtk+-2.0`"
 
 %install
 rm -rf $RPM_BUILD_ROOT

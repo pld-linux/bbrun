@@ -5,7 +5,7 @@ Summary:	A simple run window with dropdown history list
 License:	GPL
 Group:		File tools
 ######		Unknown group!
-Source0:	http://www.dwave.net/~jking/bbrun/%name-%version.tar.bz2
+Source0:	http://www.dwave.net/~jking/bbrun/%name-%version.tar.gz
 Patch0:		%name-1.4-alt-make.patch
 URL:		http://www.dwave.net/~jking/bbrun/
 Requires:	common-licenses

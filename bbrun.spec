@@ -2,7 +2,7 @@ Summary:	A simple run window with dropdown history list
 Summary(pl):	Proste okienko uruchamiania z rozwijan± list± historii
 Name:		bbrun
 Version:	1.4
-Release:	alt1
+Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://www.dwave.net/~jking/bbrun/%{name}-%{version}.tar.gz

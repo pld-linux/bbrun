@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://www.darkops.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	d31cecada7d39b894bdf6012c6bae98a
+# Source0-md5:	820960e3d52ddf2d5cf7e4ba51821bfd
 URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+2-devel

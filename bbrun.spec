@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications
 Source0:	http://www.dwave.net/~jking/bbrun/%{name}-%{version}.tar.gz
 # Source0-md5:	d31cecada7d39b894bdf6012c6bae98a
-Patch0:		%{name}-1.4-alt-make.patch
 URL:		http://www.dwave.net/~jking/bbrun/
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel
@@ -26,29 +25,20 @@ poleceñ.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
-%make_build -C %{name}
+%{__make} -C bbrun \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} `gtk-config --cflags`"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -D %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-#install -D %{name}/%{name}.xpm %buildroot%_miconsdir/%{name}.xpm
-#%__mkdir_p %buildroot%_menudir
-#%__cat <<EOF >%buildroot%_menudir/%{name}
-#?package(%{name}): \
-#	command="%_bindir/%{name} -w" \
-#	needs="x11" \
-#	icon="%{name}.xpm" \
-#	section="Applications/File tools" \
-#	title="BBrun" \
-#	longtitle="A simple run window"
-#EOF
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc Changelog README
 %attr(755,root,root) %{_bindir}/%{name}
-#%_menudir/%{name}
-#%_miconsdir/%{name}.xpm

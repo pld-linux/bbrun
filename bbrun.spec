@@ -6,6 +6,7 @@ Release:	alt1
 License:	GPL
 Group:		Applications
 Source0:	http://www.dwave.net/~jking/bbrun/%{name}-%{version}.tar.gz
+# Source0-md5:	d31cecada7d39b894bdf6012c6bae98a
 Patch0:		%{name}-1.4-alt-make.patch
 URL:		http://www.dwave.net/~jking/bbrun/
 BuildRequires:	XFree86-devel

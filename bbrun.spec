@@ -34,13 +34,13 @@ poleceñ.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -D %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-#install -D %{name}/%name.xpm %buildroot%_miconsdir/%name.xpm
+#install -D %{name}/%{name}.xpm %buildroot%_miconsdir/%{name}.xpm
 #%__mkdir_p %buildroot%_menudir
-#%__cat <<EOF >%buildroot%_menudir/%name
-#?package(%name): \
-#	command="%_bindir/%name -w" \
+#%__cat <<EOF >%buildroot%_menudir/%{name}
+#?package(%{name}): \
+#	command="%_bindir/%{name} -w" \
 #	needs="x11" \
-#	icon="%name.xpm" \
+#	icon="%{name}.xpm" \
 #	section="Applications/File tools" \
 #	title="BBrun" \
 #	longtitle="A simple run window"
@@ -50,5 +50,5 @@ install -D %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %defattr(644,root,root,755)
 %doc Changelog README
 %attr(755,root,root) %{_bindir}/%{name}
-#%_menudir/%name
-#%_miconsdir/%name.xpm
+#%_menudir/%{name}
+#%_miconsdir/%{name}.xpm

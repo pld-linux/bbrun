@@ -10,6 +10,7 @@ Source0:	http://www.darkops.net/bbrun/%{name}-%{version}.tar.gz
 URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

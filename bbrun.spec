@@ -5,7 +5,7 @@ Version:	1.6
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	http://www.darkops.net/bbrun/%{name}-%{version}.tar.gz
+Source0:	http://www.darkops.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	d31cecada7d39b894bdf6012c6bae98a
 URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel

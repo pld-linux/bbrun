@@ -5,11 +5,11 @@ Version:	1.6
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	http://www.darkops.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.darkops.net/bbrun/%{name}-%{version}.tar.gz
 # Source0-md5:	820960e3d52ddf2d5cf7e4ba51821bfd
 URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel
-BuildRequires:	gtk+2-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,7 +19,7 @@ also features a history list of the most recent commands.
 
 %description -l pl
 BBrun to narzêdzie do uruchamiania dla BlackBoksa. Mo¿e byæ
-uruchamiane w szparze lub w trybie cofniêtym, wiêc mo¿e by przypisany
+uruchamiane w szparze lub w trybie cofniêtym, wiêc mo¿e byæ przypisane
 do klawisza z bbkeys. Ma tak¿e listê historii ostatnio wywo³ywanych
 poleceñ.
 

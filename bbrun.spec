@@ -9,7 +9,7 @@ Source0:	http://www.darkops.net/bbrun/%{name}-%{version}.tar.gz
 # Source0-md5:	820960e3d52ddf2d5cf7e4ba51821bfd
 URL:		http://www.darkops.net/bbrun/
 BuildRequires:	XFree86-devel
-BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -1,5 +1,5 @@
 Summary:	A simple run window with dropdown history list
-Summary(pl.UTF-8):   Proste okienko uruchamiania z rozwijaną listą historii
+Summary(pl.UTF-8):	Proste okienko uruchamiania z rozwijaną listą historii
 Name:		bbrun
 Version:	1.6
 Release:	0.1

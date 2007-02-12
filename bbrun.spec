@@ -1,5 +1,5 @@
 Summary:	A simple run window with dropdown history list
-Summary(pl):	Proste okienko uruchamiania z rozwijan± list± historii
+Summary(pl.UTF-8):   Proste okienko uruchamiania z rozwijanÄ… listÄ… historii
 Name:		bbrun
 Version:	1.6
 Release:	0.1
@@ -18,11 +18,11 @@ BBrun is a run utility for BlackBox which can be run in the slit or in
 withdrawn mode so that it can be bound to a keystroke from bbkeys. It
 also features a history list of the most recent commands.
 
-%description -l pl
-BBrun to narzêdzie do uruchamiania dla BlackBoksa. Mo¿e byæ
-uruchamiane w szparze lub w trybie cofniêtym, wiêc mo¿e byæ przypisane
-do klawisza z bbkeys. Ma tak¿e listê historii ostatnio wywo³ywanych
-poleceñ.
+%description -l pl.UTF-8
+BBrun to narzÄ™dzie do uruchamiania dla BlackBoksa. MoÅ¼e byÄ‡
+uruchamiane w szparze lub w trybie cofniÄ™tym, wiÄ™c moÅ¼e byÄ‡ przypisane
+do klawisza z bbkeys. Ma takÅ¼e listÄ™ historii ostatnio wywoÅ‚ywanych
+poleceÅ„.
 
 %prep
 %setup -q
